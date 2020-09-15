@@ -23,6 +23,8 @@ usersRouter.post('/', async (request, response) => {
     });
 
     delete user.password;
+
+    return response.json(user);
 });
 
 usersRouter.patch('/avatar', ensureAuthenticated, upload.single('avatar'), async (request, response) => {
