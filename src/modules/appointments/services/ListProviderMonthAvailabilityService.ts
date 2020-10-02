@@ -1,5 +1,5 @@
-import { injectable, inject } from 'tsyringe';
 import { getDate, getDaysInMonth } from 'date-fns';
+import { injectable, inject } from 'tsyringe';
 
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
